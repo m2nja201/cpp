@@ -27,6 +27,9 @@
     <ClCompile Include="10866BJ_mj.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="9012_BJ.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="LList.h">
