@@ -57,7 +57,53 @@ struct org_tree {
 
 		return true;
 	}
+
+	// level order : 현재 노드에 연결되지 않은 노드로 이동 (재귀 사용X)
+	static void levelOrder(node* start) {
+		if (!start) return;
+
+		queue<node*> q;
+		q.push(start);
+
+		while (!q.empty()) {
+			int size = q.size();
+			for (int i = 0; i < size; i++) {
+				auto current = q.front();
+				q.pop();
+
+				cout << current->position << ", ";
+				if (current->first) q.push(current->first);
+				if (current->second) q.push(current->second);
+			}
+			cout << endl;
+		}
+	}
 };
+
+static void preOrder(node* start) { // preOrde : 전위순회 : 현재노드 -> 왼쪽 서브 노드 -> 오른쪽 서브 노드
+	if (!start) return;
+
+	cout << start->position << ",";
+	preOrder(start->first);
+	preOrder(start->second);
+}
+
+static void inOrder(node* start) { // in-Order : 중위 순회 :왼쪽 노드 -> 현재 노드 -> 오른쪽 노드
+	if (!start) return;
+
+	inOrder(start->first);
+	cout << start->position << ", ";
+	inOrder(start->second);
+}
+
+static void postOrder(node* start) { // post order : 후위 순회 : 두 자식 노드 먼저 방문 -> 현재 노드
+	if (!start) return;
+
+	postOrder(start->first);
+	postOrder(start->second);
+	cout << start->position << ", ";
+}
+
 
 
 int main() {
@@ -69,4 +115,15 @@ int main() {
 	tree.addSub("부사장", "마케팅부장");
 	tree.addSub("마케팅부장", "홍보팀장");
 	tree.addSub("홍보팀장", "홍보부원");
+
+	cout << endl << "전위 순회 : ";
+	preOrder(tree.root);
+	cout << endl << "중위 순회 : ";
+	inOrder(tree.root);
+	cout << endl << "후위 순회 : ";
+	postOrder(tree.root);
+	cout << endl << endl;
+
+	tree.levelOrder(tree.root);  
+	return 0;
 }
