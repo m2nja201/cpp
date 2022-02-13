@@ -13,22 +13,34 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="소스 파일\0213">
+      <UniqueIdentifier>{6f5da696-7e62-4fc0-894c-37590aaf3826}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\before0213">
+      <UniqueIdentifier>{df012d0f-a48c-4a68-b3b0-6bc64f87d2e2}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="itMove.cpp">
-      <Filter>소스 파일</Filter>
+    <ClCompile Include="graphEx1.cpp">
+      <Filter>소스 파일\0213</Filter>
     </ClCompile>
-    <ClCompile Include="alth_mj1.cpp">
-      <Filter>소스 파일</Filter>
+    <ClCompile Include="org.cpp">
+      <Filter>소스 파일\0213</Filter>
     </ClCompile>
     <ClCompile Include="2346_mj.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="10866BJ_mj.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\before0213</Filter>
     </ClCompile>
     <ClCompile Include="9012_BJ.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\before0213</Filter>
+    </ClCompile>
+    <ClCompile Include="10866BJ_mj.cpp">
+      <Filter>소스 파일\before0213</Filter>
+    </ClCompile>
+    <ClCompile Include="alth_mj1.cpp">
+      <Filter>소스 파일\before0213</Filter>
+    </ClCompile>
+    <ClCompile Include="itMove.cpp">
+      <Filter>소스 파일\before0213</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
