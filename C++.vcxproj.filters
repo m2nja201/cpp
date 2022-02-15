@@ -19,6 +19,9 @@
     <Filter Include="소스 파일\before0213">
       <UniqueIdentifier>{df012d0f-a48c-4a68-b3b0-6bc64f87d2e2}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\0216">
+      <UniqueIdentifier>{094365de-7bf8-4d51-b504-1c29c15db2a4}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="graphEx1.cpp">
@@ -41,6 +44,15 @@
     </ClCompile>
     <ClCompile Include="itMove.cpp">
       <Filter>소스 파일\before0213</Filter>
+    </ClCompile>
+    <ClCompile Include="1991_0214.cpp">
+      <Filter>소스 파일\0213</Filter>
+    </ClCompile>
+    <ClCompile Include="maxHeap.cpp">
+      <Filter>소스 파일\0216</Filter>
+    </ClCompile>
+    <ClCompile Include="maxHeap_update.cpp">
+      <Filter>소스 파일\0216</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
