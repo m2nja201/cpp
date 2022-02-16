@@ -54,6 +54,9 @@
     <ClCompile Include="maxHeap_update.cpp">
       <Filter>소스 파일\0216</Filter>
     </ClCompile>
+    <ClCompile Include="island.cpp">
+      <Filter>소스 파일\0216</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="LList.h">

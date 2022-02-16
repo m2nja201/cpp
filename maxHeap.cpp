@@ -4,19 +4,21 @@ using namespace std;
 
 priority_queue<int> maxheap;
 int main() {
-
+	ios_base::sync_with_stdio(false);
+	cin.tie(NULL);
 	int N=0;
-	scanf("%d", N);
+
+	cin >> N;
 	int x=0;
 
 	for (int i = 0; i < N; i++) {
-		scanf("%d", x);
+		cin >> x;
 		if (x == 0) {
 			if (maxheap.size() == 0) {
-				printf("0\n");
+				cout << 0 << '\n';
 			}
 			else {
-				printf("%d\n", maxheap.top());
+				cout << maxheap.top() << '\n';
 				maxheap.pop();
 			}
 		}
