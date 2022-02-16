@@ -157,7 +157,7 @@
     <ClCompile Include="graphEx1.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="island.cpp" />
+    <ClCompile Include="maze.cpp" />
     <ClCompile Include="itMove.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>

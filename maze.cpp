@@ -1,4 +1,4 @@
-// 섬의 개수
+// 미로탐색
 
 #include <iostream>
 #include <queue>
