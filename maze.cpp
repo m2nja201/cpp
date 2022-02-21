@@ -47,6 +47,7 @@ int main() {
 			maze[i][j] = num[j]-'0';
 		}
 	}
+	
 	BFS();
 	return 0;
 }

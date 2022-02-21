@@ -22,6 +22,9 @@
     <Filter Include="소스 파일\0216">
       <UniqueIdentifier>{094365de-7bf8-4d51-b504-1c29c15db2a4}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\0220">
+      <UniqueIdentifier>{1f62777b-ebb2-4d92-9d19-15d37e50e1ca}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="graphEx1.cpp">
@@ -56,6 +59,24 @@
     </ClCompile>
     <ClCompile Include="maze.cpp">
       <Filter>소스 파일\0216</Filter>
+    </ClCompile>
+    <ClCompile Include="island.cpp">
+      <Filter>소스 파일\0216</Filter>
+    </ClCompile>
+    <ClCompile Include="지울예정.cpp">
+      <Filter>소스 파일\0216</Filter>
+    </ClCompile>
+    <ClCompile Include="lonString.cpp">
+      <Filter>소스 파일\0220</Filter>
+    </ClCompile>
+    <ClCompile Include="10430.cpp">
+      <Filter>소스 파일\0220</Filter>
+    </ClCompile>
+    <ClCompile Include="simpleBackpack.cpp">
+      <Filter>소스 파일\0220</Filter>
+    </ClCompile>
+    <ClCompile Include="11098.cpp">
+      <Filter>소스 파일\0220</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
