@@ -25,6 +25,9 @@
     <Filter Include="소스 파일\0220">
       <UniqueIdentifier>{1f62777b-ebb2-4d92-9d19-15d37e50e1ca}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\0222">
+      <UniqueIdentifier>{3dfa8ca0-361b-4b8a-a7d6-e8097087f436}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="graphEx1.cpp">
@@ -63,9 +66,6 @@
     <ClCompile Include="island.cpp">
       <Filter>소스 파일\0216</Filter>
     </ClCompile>
-    <ClCompile Include="지울예정.cpp">
-      <Filter>소스 파일\0216</Filter>
-    </ClCompile>
     <ClCompile Include="lonString.cpp">
       <Filter>소스 파일\0220</Filter>
     </ClCompile>
@@ -77,6 +77,18 @@
     </ClCompile>
     <ClCompile Include="11098.cpp">
       <Filter>소스 파일\0220</Filter>
+    </ClCompile>
+    <ClCompile Include="ioioi.cpp">
+      <Filter>소스 파일\0222</Filter>
+    </ClCompile>
+    <ClCompile Include="longS.cpp">
+      <Filter>소스 파일\0222</Filter>
+    </ClCompile>
+    <ClCompile Include="findNum.cpp">
+      <Filter>소스 파일\0222</Filter>
+    </ClCompile>
+    <ClCompile Include="newIOIOI.cpp">
+      <Filter>소스 파일\0222</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

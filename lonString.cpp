@@ -17,7 +17,7 @@ int hNum(string str, int index, int term) {
 	int intPow = 0;
 	//cout << "** start index : "<<index<<" - ";
 	for (int i = index; i < index + term; i++) {
-		sum += str[i] * (int)pow(29, term - intPow - 1);
+		sum += str[i] * (int)pow(29, term - intPow - 1);   // hNum(abcd, 1, 2) => 
 		intPow++;
 		//cout << str[i];
 	}
@@ -56,7 +56,7 @@ int main() {
 		for (int j = 0; j < L-len+1; j++) {
 			//cout << "1단계" << endl;
 			int sumHash = hNum(str, j, len);
-			flag = hashNum.insert(sumHash).second;
+			flag = hashNum.insert(sumHash).second; // len 2
 			//cout << "2단계" << endl;
 			if (!flag) { // 반복된 게 있다
 				len++;
