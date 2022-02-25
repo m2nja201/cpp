@@ -45,6 +45,8 @@ longS.cpp // 백준 3033 문제(가장 긴 문자열) 최종 답안
 sumArray.cpp // 백준 11728 문제(배열 합치기)
 sorting2.cpp // 백준 2751 문제(수 정렬하기2)
 point.cpp // 백준 11650 문제 (좌표 정렬하기)
+sumofnone.cpp // 프로그래머스 '없는 숫자 더하기' 문제 [출처 링크](https://programmers.co.kr/learn/courses/30/lessons/86051)
+englishWord.cpp // 프로그래머스 '숫자 문자열과 영단어' 문제 [출처 링크](https://programmers.co.kr/learn/courses/30/lessons/81301)
 ```    
 **간단 내용**
 - c++ 공부한 것도 기록하고 있었음을 까먹었다.. 폭풍 업로드..
@@ -53,4 +55,14 @@ point.cpp // 백준 11650 문제 (좌표 정렬하기)
 - 즉, ioioi.cpp는 해시테이블을 사용해서 푼 답, newIOIOI.cpp는 문자열을 사용해 푼 답이다.
 - sumArray.cpp부터 point.cpp는 vector와 algoritm 헤더가 있어 쉽게 풀 수 있었다.
 - endl을 "\n"으로 바꿔서 사용하는 꿀팁을 알게된 이후 백준에 재출할 때 잘 쓰고 있다.
+------
+### 0225~0226
+**생성파일**
+```
+kNum.cpp // 프로그래머스 'k번째 수' 문제 [출처 링크](https://programmers.co.kr/learn/courses/30/lessons/42748)
+machineGame.cpp // 프로그래머스 '크레인 인형뽑기 게임' 문제 [출처 ](https://programmers.co.kr/learn/courses/30/lessons/64061)
+```
+**간단 내용**
+- c++ 기본 문제를 풀면서 기본기도 다지고, 성공한 문제를 java로 다시 풀어보는 연습을 하는 중이다.
+- c++은 Lv.1문제 두 개만 더 풀고 Lv.2 문제로 넘어가도 될 것 같다.
 ------
