@@ -8,28 +8,33 @@ int solution(vector<vector<int>> board, vector<int> moves) {
     int answer = 0;
     vector<int> store;
     int index = 0;
-
-    while (!moves.empty()) {
-
-        for (int i = 0; i < board.size(); i++) {
-            if (board[i][moves[index]] != 0) {
-
-                if (store.back() == board[i][moves[index]]) {
-                    answer += 2;
-                    store.pop_back();
-                }
-                else {
-                    store.push_back(board[i][moves[index]]);
-                }
-
-                board[i][moves[index]] = 0;
-                moves.erase(moves.begin());
-                index++;
+    
+    while(!moves.empty()){
+        int ii;
+        bool flag = false;
+        for (int i=0; i<board.size(); i++){
+            if (board[i][moves.front()-1] != 0){
+                ii = i;
+                flag = true;
                 break;
             }
-            else {
-                continue;
+        }
+        if (!flag){
+            moves.erase(moves.begin());
+        }
+        else{
+            if (!store.empty()){
+                if (store.back() == board[ii][moves.front()-1]){
+                    answer += 2;
+                    store.pop_back();
+                    board[ii][moves.front()-1] = 0;
+                    moves.erase(moves.begin());
+                    continue;
+                }
             }
+            store.push_back(board[ii][moves.front()-1]);
+            board[ii][moves.front()-1] = 0;
+            moves.erase(moves.begin());
         }
     }
     return answer;
