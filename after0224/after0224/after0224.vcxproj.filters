@@ -24,5 +24,11 @@
     <ClCompile Include="point.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="knum.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="company.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
