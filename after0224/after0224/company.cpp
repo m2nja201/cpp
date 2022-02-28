@@ -4,6 +4,7 @@
 #include <iostream>
 #include <vector>
 using namespace std;
+#define endl "\n"
 
 pair<int, int>* score;
 void quicksort(pair<int, int>* grade, int start, int end) {
@@ -41,7 +42,7 @@ int pass(pair<int, int>* grade, int start, int end){
 		if (grade[i].second < top) {
 			passer++;
 			top = grade[i].second;
-			// cout << top;
+			//cout <<"-" << top<<"-";
 		}
 	}
 	return passer;
@@ -50,7 +51,7 @@ int pass(pair<int, int>* grade, int start, int end){
 int main() {
 	ios_base::sync_with_stdio(0);
 	cin.tie(0);
-
+	cout.tie(0);
 	int N, T;
 	
 	cin >> T;
@@ -65,6 +66,10 @@ int main() {
 			// cin >> score[i].first >> score[i].second;
 		}
 		cout << pass(score, 0, N - 1);
+		//cout << endl << "===============" << endl;
+		/*for (int j = 0; j < N; j++) {
+			cout << score[j].first<<" "<<score[j].second<<" / ";
+		}*/
 		T--;
 	}
 	
