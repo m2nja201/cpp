@@ -84,3 +84,50 @@ switch.cpp // 백준 11047(전구와 스위치) 문제
 - 하지만 전구와 스위치 문제에 있어서 스위치 on 시작점에 따라 값이 달라졌기 때문에 그리디 알고리즘과 함수 실행을 통한 최솟값 찾기를 합쳐서 실행했다.
 - 이번 코드를 통해 그리디 알고리즘이 최적의 알고리즘은 아니란 것을 알았고, 다시 한 번 그리디 알고리즘을 공부할 예정이다.
 ------
+### 0306~0308
+**생성파일**
+```
+lost.cpp // 백준 1541(잃어버린 괄호) 문제
+sortinCard.cpp // 백준 1715(카드 정렬하기) 문제 (sorting 오타)
+emoticon.cpp // 14226(이모티콘) 문제
+algo.cpp // 백준 1261(알고스팟) 문제
+```
+**간단 내용**
+**BFS**
+- BFS : 너비 우선 탐색 (최단 경로를 찾을 때 사용)
+- c++에서 BFS를 구현하기 위해 queue를 사용
+- 방문했는지 여부를 확인할 수 있는 배열이 필요함.
+```
+int map[10][10] = {0};
+int check[10] = {0};
+queue<int> q;
+int N;
+
+void BFS(int v){
+  cout<<v<<" ";
+  q.push(v);
+  while(!q.empty()){
+    int here = q.front();
+    q.pop();
+    for (int i=0; i<N; i++){
+      if (map[here][i]==1 && check[i]==0){
+        check[i]=1; // 방문했다
+        cout<<i<<" ";
+        q.push(i);
+      }
+    }
+  }
+}
+
+int main(){
+  cin>>N;
+  while(1){
+    int v1, v2; cin>>v1>>v2;
+    if (v1==-1 && v2==-1) break;
+    map[v1][v2] = map[v2][v1] = 1; // 쌍방향
+  }
+  BFS(1);
+  return 0;
+}
+```
+------
