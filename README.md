@@ -131,3 +131,93 @@ int main(){
 }
 ```
 ------
+### 0309~03
+코로나 확진으로 인해 몸이 죽을 듯이 아파서 코딩을 하지 못했다... ㅠㅠ       
+**생성 파일**
+```
+treeEsc.cpp // 백준 15900(나무 탈출) 문제
+water.cpp // 백준 22511(물통) 문제 - 예제도 다 맞았는데, 반례를 찾아봐야겠다. 틀렸습니다가 뜬다.
+DFSBFS.cpp // 백준 1260(DFS와 BFS) 문제
+startlink.cpp // 백준 5014(스타트링크) 문제
+```
+**간단 내용**
+**DFS**
+- 깊이 우선 탐색
+- 스택(Stack)이나 재귀함수를 이용해서 구현할 수 있다.
+- 참고 : https://hongku.tistory.com/157
+```
+int number = 0;
+int visit[9];
+vector<int> a[10];
+
+void DFS(int start){
+    if (visit[start]) return;
+    visit[start] = true; // 방문
+    cout<<start<<" ";
+
+    for (int i=0; i<a[start].size(); i++){
+	int x = a[start][i];
+	DFS(x); // 인접한 노드를 방문한 뒤 재귀함수
+    }
+}
+
+int main(){
+    a[1].push_back(2); // 1과 2를 연결
+    a[2].push_back(1);
+	// ....
+    DFS(1); // 1번 노드부터 탐색 실행
+    return 0;
+}
+```
+**스패닝 트리**   
+- 방향이 없는 그래프에서 모든 노드를 포함하면서 순환되는 경로를 제거한 형태
+- 최소 스패닝 트리 : 가중치의 합이 가장 작은 스패닝 트리
+- 사용하는 알고리즘 : 크루스칼 알고리즘, 프림 알고리즘
+**프림 알고리즘**
+참고 : https://yabmoons.tistory.com/363?category=838490
+<동작원리>        
+- 임의의 시작점 하나 선택하고 이 정점과 연결된 정점들의 거리를 업데이트
+- 가장 짧은 길이의 간선을 선택해 연결
+- 가장 짧은 간선으로 연결되어 있는 정점을 선택하고, 정점들의 거리 업데이트
+- 2~3번 과정을 (전체 노드 갯수 - 1)번 반복
+<동작설명>
+- 정점과의 거리는 1차원 배열에 저장되어 있다. 이 배열은 정점 갯수대로 있고, 모두 무한대로 저장되어 있는 상태이다.
+- 연결된 정점들의 거리를 처음으로 업데이트하는 것은 수동이다.
+```
+int N, M, Answer;
+int Dist[MAX];
+bool select[MAX];
+vector<pari<int, int>> Cost[MAX];
+
+void Prim_Using_Heap()
+{
+    priority_queue<pair<int, int>> PQ;
+    for (int i = 0; i < Cost[1].size(); i++)
+    {
+        int Next = Cost[1][i].first;
+        int Distance = Cost[1][i].second;
+        
+        PQ.push(make_pair(-Distance, Next));
+    }
+    
+    Visit[1] = true;
+    while (PQ.empty() == 0)
+    {
+        int Distance = -PQ.top().first;
+        int Cur = PQ.top().second;
+        PQ.pop();
+ 
+        if (Visit[Cur] == false)
+        {
+            Visit[Cur] = true;
+            Answer = Answer + Distance;
+            for (int i = 0; i < Cost[Cur].size(); i++)
+            {
+                int nDistance = Cost[Cur][i].second;
+                int Next = Cost[Cur][i].first;
+                if (Visit[Next] == false) PQ.push(make_pair(-nDistance, Next));
+            }
+        }
+    }
+}
+```
