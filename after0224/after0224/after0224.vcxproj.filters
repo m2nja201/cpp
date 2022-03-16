@@ -13,6 +13,9 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="소스 파일\0316">
+      <UniqueIdentifier>{bf2e595f-717e-439c-87eb-89978df5923c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="sumArray.cpp">
@@ -65,6 +68,12 @@
     </ClCompile>
     <ClCompile Include="startlink.cpp">
       <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="constellation.cpp">
+      <Filter>소스 파일\0316</Filter>
+    </ClCompile>
+    <ClCompile Include="city.cpp">
+      <Filter>소스 파일\0316</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
