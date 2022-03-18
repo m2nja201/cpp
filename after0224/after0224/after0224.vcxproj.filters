@@ -16,6 +16,9 @@
     <Filter Include="소스 파일\0316">
       <UniqueIdentifier>{bf2e595f-717e-439c-87eb-89978df5923c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\0318">
+      <UniqueIdentifier>{ea6bf8d6-5b36-46c3-858b-b408136b7967}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="sumArray.cpp">
@@ -74,6 +77,12 @@
     </ClCompile>
     <ClCompile Include="city.cpp">
       <Filter>소스 파일\0316</Filter>
+    </ClCompile>
+    <ClCompile Include="network.cpp">
+      <Filter>소스 파일\0318</Filter>
+    </ClCompile>
+    <ClCompile Include="spanningTree.cpp">
+      <Filter>소스 파일\0318</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
