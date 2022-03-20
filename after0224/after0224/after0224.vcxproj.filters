@@ -84,5 +84,8 @@
     <ClCompile Include="spanningTree.cpp">
       <Filter>소스 파일\0318</Filter>
     </ClCompile>
+    <ClCompile Include="shortcut.cpp">
+      <Filter>소스 파일\0318</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
