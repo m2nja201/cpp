@@ -1,6 +1,6 @@
 // 지름길 (1446)
 // 3.20
-//
+// 성공
 
 #include <iostream>
 #include <queue>
@@ -24,7 +24,7 @@ void connect(int s, int e, int l) {
 void algo() {
 	check[0] = 0; // 정점 방문
 
-	for (int i = 1; i <= D; i++) {
+	for (int i = 1; i <= D; i++) { // 그동안 진행한 문제와 다른 점은 while을 안써도 된다는 것 => 그냥 비교만 해도 되는 거라서
 		if (node[i].size() == 0) {
 			check[i] = check[i - 1] + 1; // 지름길 없으면 그냥 더하면 되는 것
 			// cout << check[i]<< " ";
@@ -49,11 +49,7 @@ int main() {
 	int start, end, length;
 	for (int i = 0; i < N; i++) {
 		cin >> start >> end >> length;
-		//if ((start - end <= length) || (end > D)) {
-		//	// 지름길이 아니거나 도착 지점보다 더 멀 때
-		//	continue;
-		//}
-		if (end > D) continue;
+		if (end > D) continue;  // 도착 지점보다 더 멀 때 : 지름길에 해당 X
 		connect(start, end, length);
 	}
 	algo();
