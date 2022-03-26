@@ -22,6 +22,9 @@
     <Filter Include="소스 파일\0322">
       <UniqueIdentifier>{7819ac4d-5461-4160-995c-1c5f8bdea1d1}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\0325">
+      <UniqueIdentifier>{c19d97a7-f4e2-47e0-856e-689b96b281d8}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="sumArray.cpp">
@@ -98,6 +101,12 @@
     </ClCompile>
     <ClCompile Include="road.cpp">
       <Filter>소스 파일\0322</Filter>
+    </ClCompile>
+    <ClCompile Include="hole.cpp">
+      <Filter>소스 파일\0325</Filter>
+    </ClCompile>
+    <ClCompile Include="timemachine.cpp">
+      <Filter>소스 파일\0325</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
