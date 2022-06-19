@@ -28,17 +28,18 @@ int main(){
                     //cout << "num[j] = "<<num[j] << " num[k] = "<<num[k] <<"\n";
                 }
             }
-            if (j == 2) arr[j] = num[j] * 100;
+            
             if (cnt == 3) {
-                //cout << "cnt == 3 ## ";
-                arr[j] = 10000 + num[j] * 1000;
+                cout << "cnt == 3 ## ";
+                arr[i] = 10000 + num[j] * 1000;
                 break;
             }
             else if (cnt == 2) {
-                //cout << "cnt == 2 ## ";
-                arr[j] = 1000 + num[j] * 100;
+                cout << "cnt == 2 ## ";
+                arr[i] = 1000 + num[j] * 100;
                 break;
             }
+            if(j == 2) arr[i] = num[j] * 100;
         }
     }
     
