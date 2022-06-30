@@ -9,7 +9,7 @@ int play(char a, char b){
     }
     else if (a == 'P'){
         if (b == 'R') return -1;
-        else if (b == 's') return 1;
+        else if (b == 'S') return 1;
     }
     else if (a == 'S'){
         if (b == 'R') return 1;
